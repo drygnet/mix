@@ -11,12 +11,19 @@
 <body>
     <div class="wrapper">
         <svg class="meeter">
+<defs>
+    <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#e60000;stop-opacity:1" />
+    </lineargradient>
+</defs>
+
 <circle id="back" r="150" cx="50%" cy="50%" stroke="lightgray" stroke-linecap="round"
 stroke-width="60" stroke-dasharray="471, 943" fill="none">
 </circle>
 
 <circle id="val" r="150" cx="50%" cy="50%" stroke-linecap="round"
-stroke="#e60000" stroke-width="50" stroke-dasharray="300, 943" fill="none">
+stroke="url(#grad1)" stroke-width="50" stroke-dasharray="300, 943" fill="none">
 </circle>
             
         </svg>
